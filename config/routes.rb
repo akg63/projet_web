@@ -1,4 +1,5 @@
 ProjetWeb::Application.routes.draw do
+  get "welcome/index"
   resources :recipes
 
   resources :users
