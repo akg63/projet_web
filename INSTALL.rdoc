@@ -1,1 +1,1 @@
-NSTALL.rdoc
+INSTALL.rdoc
