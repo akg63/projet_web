@@ -1,16 +1,24 @@
 <div id="menu">
 	<ul>
-		<li>
-			<a href="">Conexion</a>
-		</li>
-		<li>|</li>
-		<li>
-			<a href="">Inscription</a>
-		</li>
+	<li>
+		<% if signed_in? %>
+			<%= link_to "Déconnexion", signout_path, :method => :delete %>
+		<% else %>
+			<%= link_to "Connexion", signin_path %>
+		<% end %>
+	</li>
+	<li>|</li>
+	<li>
+		<% if signed_in? %>
+			Bienvenue, <%= current_user.login %>
+		<% else %>
+			<a href="/signup">Inscription</a>
+		<% end %>
+	</li>
 	</ul>
 </div>
 <div id="title">
-	<img alt="bienvenue" src="file:///C:/Users/Abdellah/Desktop/projet_web/app/assets/images/welcome.png">
+	<%= image_tag("welcome.png", alt: "Bienvenue") %>
 </div>
 <div id="window">
 	<table>
@@ -18,13 +26,15 @@
 			<tr>
 				<td>
 					<a href="">
-						<img alt="soupes" src="file:///C:/Users/Abdellah/Desktop/projet_web/app/assets/images/soupe_icon.png">
+						<%= image_tag("soupe_icon.png", alt: "Soupes") %>
+
 					</a>
 					<p>Soupes</p>
 				</td>
 				<td>
 					<a href="">
-						<img alt="plats" src="file:///C:/Users/Abdellah/Desktop/projet_web/app/assets/images/plate_icon.png">
+						<%= image_tag("plate_icon.png", alt: "Plats") %>
+	
 					</a>
 					<p>Plats</p>
 				</td>
@@ -32,13 +42,15 @@
 			<tr>
 				<td>
 					<a href="">
-						<img alt="salades" src="file:///C:/Users/Abdellah/Desktop/projet_web/app/assets/images/salad_icon.png">
+						<%= image_tag("salad_icon.png", alt: "Salades") %>
+
 					</a>
 					<p>Salades</p>
 				</td>
 				<td>
 					<a href="">
-						<img alt="desserts" src="file:///C:/Users/Abdellah/Desktop/projet_web/app/assets/images/dessert_icon.png">
+						<%= image_tag("dessert_icon.png", alt: "Desserts") %>
+
 					</a>
 					<p>Desserts</p>
 				</td>

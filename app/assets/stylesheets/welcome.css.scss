@@ -8,7 +8,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #fdf6c4;
 }
-div#window {
+#window {
     box-shadow: 0 3px 6px rgba(50, 50, 50, 0.13);
     background-color: white;
     border-radius: 9px;
@@ -16,17 +16,21 @@ div#window {
     width: 25em;
     margin: 1em auto 0 auto;
 }
+#window table a:hover {
+    text-decoration: none;
+}
 table {
     text-align: center;
     margin: 0 auto;
 }
-tbody {
+tbody > tr:first-child td {
+    padding-top: 1em;
 }
 td {
-    padding: 1em 2em;
+    padding: 0 2em;
 }
 #title {
-    margin: 2em auto 0 auto;
+    margin: 3em auto 0 auto;
     width: 390px;
 }
 ul {
@@ -37,12 +41,12 @@ ul {
  color: rgb(238, 167, 15);
  display:block;
  float: right;
-}
+ }
 
 #menu li {
     color: rgba(83, 69, 59, 0.61);
     float: right;
-    margin-right: 20;
+    margin-right: 20px;
 }
 #menu {
     background-color: #934e1a;
