@@ -1,3 +1,62 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin: 0;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fdf6c4; }
+
+#window {
+  box-shadow: 0 3px 6px rgba(50, 50, 50, 0.13);
+  background-color: white;
+  border-radius: 9px;
+  border: 1px solid #F6E2AD;
+  width: 50em;
+  margin: 1em auto 0 auto; }
+
+#window table a:hover {
+  text-decoration: none; }
+
+table {
+  text-align: center;
+  margin: 0 auto; }
+
+tbody > tr:first-child td {
+  /* padding-top: 1em; */ }
+
+td {
+  padding: 2em; }
+
+#title {
+  margin: 3em auto 0 auto;
+  width: 390px; }
+
+ul {
+  margin: 0;
+  list-style-type: none; }
+
+#menu ul li a {
+  color: #eea70f;
+  display: block;
+  float: right; }
+
+#menu li {
+  float: right;
+  margin-right: 20px; }
+
+#menu {
+  color: #eea70f;
+  background-color: #934e1a;
+  box-shadow: 0 3px 6px rgba(50, 50, 50, 0.46);
+  height: 20px;
+  padding: 1em 0; }  
+.new-recipe {
+    margin: 1em 0 0 18em; }
+    
+.sep {
+    color: #928552; }
+    
+.new-recipe a {
+    color: #934e1a; }

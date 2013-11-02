@@ -1,37 +1,38 @@
-<h1>Listing recipes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Ingredients</th>
-      <th>Preparation</th>
-      <th>Image</th>
-      <th>Category</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @recipes.each do |recipe| %>
-      <tr>
-        <td><%= recipe.title %></td>
-        <td><%= recipe.description %></td>
-        <td><%= recipe.ingredients %></td>
-        <td><%= recipe.preparation %></td>
-        <td><%= recipe.image %></td>
-        <td><%= recipe.category %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Recipe', new_recipe_path %>
+  <div id="menu">
+	<ul>
+	<li>
+			<a data-method="delete" href="http://192.168.1.6/signout" rel="nofollow">Déconnexion</a>
+	</li>
+	<li class="sep">|</li>
+	<li>
+			Bienvenue, lol
+	</li>
+	</ul>
+</div>
+<div id="title">
+	<img alt="Bienvenue" src="./new-test_files/soupes.png">
+</div>
+<div id="window">
+	<table>
+		<tbody>
+			<tr>
+				<td>IMAGE</td>
+				<td>
+					<table>
+						<tbody>
+							<tr>
+								<td>TITRE</td>
+							</tr>
+							<tr>
+								<td>Description</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="new-recipe">
+<a href="">Nouvelle recette</a>
+</div>
